@@ -1,0 +1,16 @@
+{
+    "name": "think-keng-api",
+    "description": "think-keng-api",
+    "scripts": {
+      "postdeploy": "node server.js"
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
+  
