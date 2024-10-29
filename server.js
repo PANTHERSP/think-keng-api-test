@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
   console.log('WebSocket client connected');
 
   // เรียกใช้ yolo.py เมื่อมีการเชื่อมต่อ
-  const pythonProcess = spawn('python', ['model.py']);
+  let pythonProcess = spawn('python', ['model.py']);
 
   pythonProcess.stdout.on('data', (data) => {
     console.log(`Output from Python script: ${data}`);
