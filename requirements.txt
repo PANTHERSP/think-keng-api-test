@@ -1,4 +1,4 @@
-# opencv-python
+opencv-python
 # ultralytics
 numpy
 # torch
