@@ -1,5 +1,5 @@
-opencv-python
+# opencv-python
 # ultralytics
-numpy
+# numpy
 torch
-python-socketio
+# python-socketio
