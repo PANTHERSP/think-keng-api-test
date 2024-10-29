@@ -48,11 +48,12 @@ io.on('connection', (socket) => {
     console.log('WebSocket client disconnected');
     if (pythonProcess) {
       pythonProcess.kill(); // หยุดกระบวนการ Python เมื่อ client หลุด
+      pythonProcess = null;
     }
   });
 });
 
 const PORT = process.env.PORT || 5501;
-server.listen(PORT, () => {
+server.listen(PORT, '::', () => {
   console.log(`Server is running on port ${PORT}`);
 });
