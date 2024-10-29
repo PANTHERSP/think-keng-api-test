@@ -13,7 +13,7 @@ cv2.setUseOptimized(True)
 sio = socketio.Client()
 
 print("Connecting to server...")  # แสดง log ก่อนการเชื่อมต่อ
-sio.connect('http://localhost:5501')
+sio.connect('https://think-keng-api-test.onrender.com/')
 
 print("Connected to server.")  # แสดง log เมื่อเชื่อมต่อสำเร็จ
 
@@ -21,8 +21,8 @@ print("Connected to server.")  # แสดง log เมื่อเชื่อ
 print("Loading YOLO model...")
 model = YOLO('best.pt')
 
-# device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
-device = 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+# device = 'cpu'
 model.to(device)
 
 # สร้างสีสำหรับแต่ละ label
