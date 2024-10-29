@@ -52,7 +52,7 @@ io.on('connection', (socket) => {
   });
 });
 
-const PORT = 5501;
+const PORT = process.env.PORT || 5501;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
