@@ -13,7 +13,7 @@ cv2.setUseOptimized(True)
 sio = socketio.Client()
 
 print("Connecting to server...")  # แสดง log ก่อนการเชื่อมต่อ
-sio.connect('https://think-keng-api-test-29b6430b7ec5.herokuapp.com/')
+sio.connect('http://localhost:5501')
 
 print("Connected to server.")  # แสดง log เมื่อเชื่อมต่อสำเร็จ
 
